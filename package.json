@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o css scss"
+    "scss": "node-sass --output-style compressed -o css scss watch"
   },
   "keywords": [],
   "author": "Rolgaizer Konstantin",

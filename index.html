@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="header__logo">
-            <img src="logo.svg" alt="Логотип">
+            LoremIpsum.Net
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu-item"><a href="#">Пункт 1</a></li>
-                <li class="header__menu-item"><a href="#">Пункт 2</a></li>
-                <li class="header__menu-item"><a href="#">Пункт 3</a></li>
-                <li class="header__menu-item"><a href="#">Пункт 4</a></li>
+                <li class="header__menu-item"><a href="#">Бизнес</a></li>
+                <li class="header__menu-item"><a href="#">О нас</a></li>
+                <li class="header__menu-item"><a href="#">Цены</a></li>
+                <li class="header__menu-item"><a href="#">Оформить заказ</a></li>
             </ul>
         </nav>
     </div>
@@ -25,23 +29,28 @@
 
 <section class="banner">
     <div class="container">
-        <h1 class="banner__title">Заголовок баннера</h1>
+        <div class="banner__title">
+            <span class="banner__title__mark">Lorem ipsum</span> dolor sit amet
+            consectetur <span class="banner__title__mark">adipiscing
+         </span>
+        </div>
+        <div class="banner__list-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
         <ul class="banner__list">
-            <li>Пункт списка 1</li>
-            <li>Пункт списка 2</li>
-            <li>Пункт списка 3</li>
+            <li>Totam rem aperiam eaque ipsa</li>
+            <li>Sit voluptatem accusantium doloremque laudantium</li>
+            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
         </ul>
         <div class="banner__buttons">
-            <button class="banner__button">Кнопка 1</button>
-            <button class="banner__button">Кнопка 2</button>
+            <button class="banner__button banner__button_blue">Заказать</button>
+            <button class="banner__button">Подробнее</button>
         </div>
     </div>
 </section>
 
 <section class="content">
     <div class="container">
-        <h2 class="content__title">Заголовок страницы</h2>
-        <p class="content__text">Небольшой текст под заголовком.</p>
+        <h2 class="content__title">Оформление <span class="content__title__mark"> Заказа</span></h2>
+        <p class="content__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
     </div>
 </section>
 
@@ -49,9 +58,20 @@
     <div class="container">
         <div class="circles__wrapper">
             <div class="circle">
-                <img src="icon1.svg" alt="Иконка 1">
+                <img src="img/search.svg" alt="Поиск">
             </div>
-            <!--  другие четыре круга с иконками аналогично -->
+            <div class="circle">
+                <img src="img/percent.svg" alt="Проценты">
+            </div>
+            <div class="circle">
+                <img src="img/document.svg" alt="Документ">
+            </div>
+            <div class="circle">
+                <img src="img/mail.svg" alt="Письмо">
+            </div>
+            <div class="circle">
+                <img src="img/money.svg" alt="Деньги">
+            </div>
         </div>
         <div class="circles__dots-line"></div>
     </div>
@@ -78,11 +98,13 @@
             © 2018 «LoremIpsum.net» Все права защищены.
         </div>
         <div class="footer__socials">
-            <!-- ссылки с SVG иконками -->
+            <a href="#" class="footer__link">QIWI wallet</a>
+            <a href="#" class="footer__link">Yandex Money</a>
+            <a href="#" class="footer__link">Web Money</a>
         </div>
         <div class="footer__contacts">
-            <a href="mailto:example@example.com" class="footer__email">example@example.com</a>
-            <!--  ссылку с SVG иконкой -->
+            <a href="mailto:example@example.com" class="footer__link">example@example.com</a>
+            <a href="#" class="footer__link">Мы вконтакте</a>
         </div>
     </div>
 </footer>
