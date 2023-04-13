@@ -11,103 +11,144 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="header__logo">
-            LoremIpsum.Net
+<div class="page-container">
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo">
+                    LoremIpsum.<span>Net</span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#">Бизнес</a></li>
+                        <li class="header__menu-item"><a href="#">О нас</a></li>
+                        <li class="header__menu-item"><a href="#">Цены</a></li>
+                        <li class="header__menu-item"><a href="#">Оформить заказ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#">Бизнес</a></li>
-                <li class="header__menu-item"><a href="#">О нас</a></li>
-                <li class="header__menu-item"><a href="#">Цены</a></li>
-                <li class="header__menu-item"><a href="#">Оформить заказ</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
-<section class="banner">
-    <div class="container">
-        <div class="banner__title">
-            <span class="banner__title__mark">Lorem ipsum</span> dolor sit amet
-            consectetur <span class="banner__title__mark">adipiscing
+    <section class="banner">
+        <div class="container">
+            <div class="banner__title">
+                <span class="banner__title__mark">Lorem ipsum</span> dolor sit<br/> amet
+                consectetur <span class="banner__title__mark">adipiscing
          </span>
+            </div>
+            <div class="banner__list__title">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+            <ul class="banner__list">
+                <li>Totam rem aperiam eaque ipsa</li>
+                <li>Sit voluptatem accusantium doloremque laudantium</li>
+                <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+            <div class="banner__buttons">
+                <button class="banner__button banner__button_blue">Заказать</button>
+                <button class="banner__button">Подробнее</button>
+            </div>
         </div>
-        <div class="banner__list-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
-        <ul class="banner__list">
-            <li>Totam rem aperiam eaque ipsa</li>
-            <li>Sit voluptatem accusantium doloremque laudantium</li>
-            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
-        </ul>
-        <div class="banner__buttons">
-            <button class="banner__button banner__button_blue">Заказать</button>
-            <button class="banner__button">Подробнее</button>
-        </div>
-    </div>
-</section>
+    </section>
+    <div class="content-wrapper">
 
-<section class="content">
-    <div class="container">
-        <h2 class="content__title">Оформление <span class="content__title__mark"> Заказа</span></h2>
-        <p class="content__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-    </div>
-</section>
+        <section class="content">
+            <div class="container">
+                <h2 class="content__title">Оформление <span> Заказа</span></h2>
+                <p class="content__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            </div>
+        </section>
 
-<section class="circles">
-    <div class="container">
-        <div class="circles__wrapper">
-            <div class="circle">
-                <img src="img/search.svg" alt="Поиск">
-            </div>
-            <div class="circle">
-                <img src="img/percent.svg" alt="Проценты">
-            </div>
-            <div class="circle">
-                <img src="img/document.svg" alt="Документ">
-            </div>
-            <div class="circle">
-                <img src="img/mail.svg" alt="Письмо">
-            </div>
-            <div class="circle">
-                <img src="img/money.svg" alt="Деньги">
-            </div>
-        </div>
-        <div class="circles__dots-line"></div>
-    </div>
-</section>
+        <section class="circles">
+            <div class="container">
+                <div class="circles__wrapper">
+                    <div class="circles__list-item">
+                        <div class="circles__item">
+                            <div class="circle">
+                                <img src="img/search.svg" alt="Поиск">
+                            </div>
+                            <div class="circle__text">Lorem ipsum dolor sit amet</div>
+                        </div>
+                        <div class="circles__item">
+                            <div class="circle">
+                                <img src="img/percent.svg" alt="Проценты">
+                            </div>
+                            <div class="circle__text">Сonsecteturadipiscing elit</div>
+                        </div>
+                        <div class="circles__item">
+                            <div class="circle">
+                                <img src="img/document.svg" alt="Документ">
+                            </div>
+                            <div class="circle__text">Sed do eiusmod tempor</div>
+                        </div>
+                        <div class="circles__item">
+                            <div class="circle">
+                                <img src="img/mail.svg" alt="Письмо">
+                            </div>
+                            <div class="circle__text">Esse cillum dolore eu fugiat</div>
+                        </div>
+                        <div class="circles__item">
+                            <div class="circle">
+                                <img src="img/money.svg" alt="Деньги">
+                            </div>
+                            <div class="circle__text">Excepteur sint occaecat cupidatat non proident</div>
+                        </div>
+                    </div>
+                    <div class="circles__dots-line"></div>
 
-<section class="form-section">
-    <div class="container">
-        <form class="form">
-            <div class="form__custom-select">
-                <!-- Здесь будет кастомный выпадающий список -->
+                </div>
             </div>
-            <input type="email" name="email" placeholder="Email" class="form__input">
-            <input type="text" name="name" placeholder="Имя" class="form__input">
-            <!-- Здесь будет ползунок с отображением процентов -->
-            <button class="form__button-attach">Прикрепить файл</button>
-            <button type="submit" class="form__button-submit">Отправить</button>
-        </form>
-    </div>
-</section>
+        </section>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__copyright">
-            © 2018 «LoremIpsum.net» Все права защищены.
-        </div>
-        <div class="footer__socials">
-            <a href="#" class="footer__link">QIWI wallet</a>
-            <a href="#" class="footer__link">Yandex Money</a>
-            <a href="#" class="footer__link">Web Money</a>
-        </div>
-        <div class="footer__contacts">
-            <a href="mailto:example@example.com" class="footer__link">example@example.com</a>
-            <a href="#" class="footer__link">Мы вконтакте</a>
-        </div>
+        <section class="form-section">
+            <div class="container">
+                <form class="form">
+                    <div class="form__custom-select">
+                        select
+                    </div>
+                    <input type="email" name="email" placeholder="Ваш e-mail" class="form__input">
+                    <input type="text" name="name" placeholder="Ваше имя" class="form__input">
+                    <div class="form__slider">slider</div>
+                    <button class="form__button-attach">Прикрепить файл</button>
+                    <button type="submit" class="form__button-submit">Отправить</button>
+                </form>
+            </div>
+        </section>
     </div>
-</footer>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__copyright">
+                    © 2018 «LOREMIPSUM.NET» Все права защищены.
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__link">
+                        <img src="img/qiwi.svg" alt="QIWI">
+                        QIWI wallet
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img src="img/ymoney.svg" alt="Yandex Money">
+                        Yandex Money
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img src="img/wmoney.svg" alt="Web Money">
+                        Web Money
+                    </a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="mailto:example@example.com" class="footer__link">
+                        <img src="img/mail.svg" alt="e-mail">
+                        example@example.com
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img src="img/vkicon.svg" alt="VKontakte">
+                        Мы вконтакте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 
 
 </body>
