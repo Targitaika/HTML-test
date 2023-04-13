@@ -107,7 +107,10 @@
                     </div>
                     <input type="email" name="email" placeholder="Ваш e-mail" class="form__input">
                     <input type="text" name="name" placeholder="Ваше имя" class="form__input">
-                    <div class="form__slider">slider</div>
+                    <div class="form__slider">
+                        <span class="form__slider-value">0%</span>
+                        <input type="range" min="0" max="100" value="0" class="form__range-slider">
+                    </div>
                     <button class="form__button-attach">Прикрепить файл</button>
                     <button type="submit" class="form__button-submit">Отправить</button>
                 </form>
@@ -137,7 +140,7 @@
                 </div>
                 <div class="footer__contacts">
                     <a href="mailto:example@example.com" class="footer__link">
-                        <img src="img/mail.svg" alt="e-mail">
+                        <img src="img/minimail.svg" alt="e-mail">
                         example@example.com
                     </a>
                     <a href="#" class="footer__link">
@@ -150,6 +153,13 @@
     </footer>
 </div>
 
+<script>
+    const rangeSlider = document.querySelector('.form__range-slider');
+    const sliderValue = document.querySelector('.form__slider-value');
 
+    rangeSlider.addEventListener('input', () => {
+        sliderValue.textContent = rangeSlider.value + '%';
+    });
+</script>
 </body>
 </html>
